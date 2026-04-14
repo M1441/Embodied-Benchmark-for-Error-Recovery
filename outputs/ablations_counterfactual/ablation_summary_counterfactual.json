@@ -1,0 +1,114 @@
+{
+  "model": "gpt-5.4",
+  "prompt_strategy": "counterfactual",
+  "dry_run": false,
+  "modes": [
+    "full"
+  ],
+  "reports": {
+    "full": {
+      "num_samples": 300,
+      "action_accuracy": 0.18333333333333332,
+      "macro_f1": 0.07924543960332418,
+      "format_compliance_rate": 0.9666666666666667,
+      "format_compliance_rate_raw": 0.9666666666666667,
+      "format_compliance_rate_repaired": 0.9666666666666667,
+      "json_valid_rate": 1.0,
+      "recovery_rate_at_k": 0.04,
+      "semi_loop_task_completion_rate": 0.04,
+      "last_action_executable_rate": 0.9266666666666666,
+      "repair_applied_count": 0,
+      "avg_steps_to_recover": 1.0,
+      "failure_breakdown": {
+        "F1": {
+          "count": 60,
+          "action_acc": 0.016666666666666666
+        },
+        "F2": {
+          "count": 60,
+          "action_acc": 0.03333333333333333
+        },
+        "F3": {
+          "count": 60,
+          "action_acc": 0.11666666666666667
+        },
+        "F4": {
+          "count": 60,
+          "action_acc": 0.7
+        },
+        "F5": {
+          "count": 60,
+          "action_acc": 0.05
+        }
+      },
+      "label_counts": {
+        "F1": 60,
+        "F2": 60,
+        "F3": 60,
+        "F4": 60,
+        "F5": 60
+      },
+      "ci95": {
+        "action_accuracy": {
+          "mean": 0.18333333333333332,
+          "low": 0.14,
+          "high": 0.22666666666666666,
+          "n_boot": 1000
+        },
+        "macro_f1": {
+          "mean": 0.07924543960332418,
+          "low": 0.049310342211199,
+          "high": 0.11494553848976152,
+          "n_boot": 1000
+        },
+        "format_compliance_rate_raw": {
+          "mean": 0.9666666666666667,
+          "low": 0.9433333333333334,
+          "high": 0.9866666666666667,
+          "n_boot": 1000
+        },
+        "format_compliance_rate_repaired": {
+          "mean": 0.9666666666666667,
+          "low": 0.9433333333333334,
+          "high": 0.9866666666666667,
+          "n_boot": 1000
+        },
+        "recovery_rate_at_k": {
+          "mean": 0.04,
+          "low": 0.02,
+          "high": 0.06333333333333334,
+          "n_boot": 1000
+        },
+        "semi_loop_task_completion_rate": {
+          "mean": 0.04,
+          "low": 0.02,
+          "high": 0.06333333333333334,
+          "n_boot": 1000
+        }
+      }
+    }
+  },
+  "token_stats": {
+    "full": {
+      "prompt_tokens_total": 217264,
+      "completion_tokens_total": 41435,
+      "num_with_usage": 286
+    }
+  },
+  "pricing_usd_per_1m_tokens": {
+    "input": 2.0,
+    "output": 8.0
+  },
+  "cost_projection": {
+    "samples_per_mode": 300,
+    "per_mode": {
+      "full": {
+        "avg_prompt_tokens_per_sample": 759.6643356643357,
+        "avg_completion_tokens_per_sample": 144.87762237762237,
+        "projected_cost_usd_for_samples": 300,
+        "projected_mode_cost_usd": 0.8035048951048951
+      }
+    },
+    "projected_total_cost_usd_all_modes": 0.8035048951048951
+  }
+}

@@ -1,0 +1,23 @@
+\begin{table}[t]
+\centering
+\caption{Recovery action prediction results. Macro-F1 computed per action-string label. B = baseline, V = VLM.}
+\label{tab:main}
+\small
+\begin{tabular}{l r r r r r r r r r }
+\toprule
+Method & N & Acc\% & M-F1 & Fmt\% & F1 & F2 & F3 & F4 & F5 \\
+\midrule
+B: LookAround & 300 & 20.0 & 0.008 & 100.0 & 100.0 & 0.0 & 0.0 & 0.0 & 0.0 \\
+B: Blind-Heuristic & 300 & 37.3 & 0.042 & 100.0 & 86.7 & 0.0 & 0.0 & 100.0 & 0.0 \\
+B: Heuristic-Oracle & 300 & 33.7 & 0.028 & 100.0 & 100.0 & 8.3 & 1.7 & 58.3 & 0.0 \\
+B: Oracle & 300 & 100.0 & 1.000 & 100.0 & 100.0 & 100.0 & 100.0 & 100.0 & 100.0 \\
+\midrule
+V: gpt-5.4 text-only & 300 & 16.7 & 0.116 & 99.3 & 8.3 & 25.0 & 13.3 & 25.0 & 11.7 \\
+V: gpt-5.4 after-only & 300 & 24.7 & 0.091 & 99.3 & 53.3 & 21.7 & 16.7 & 28.3 & 3.3 \\
+V: gpt-5.4 full (B+A) & 300 & 28.3 & 0.120 & 100.0 & 61.7 & 21.7 & 18.3 & 31.7 & 8.3 \\
+V: gpt-5.4 swap-test & 300 & 28.3 & 0.107 & 100.0 & 48.3 & 26.7 & 20.0 & 40.0 & 6.7 \\
+V: gpt-5.4 full+counterfactual & 300 & 0.7 & 0.000 & 99.3 & 3.3 & 0.0 & 0.0 & 0.0 & 0.0 \\
+V: gpt-5.4 full+mental_simulation & 300 & 26.7 & 0.105 & 100.0 & 73.3 & 11.7 & 36.7 & 5.0 & 6.7 \\
+\bottomrule
+\end{tabular}
+\end{table}

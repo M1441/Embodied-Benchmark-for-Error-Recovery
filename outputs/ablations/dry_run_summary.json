@@ -1,0 +1,168 @@
+{
+  "model": "gpt-4o-mini",
+  "dry_run": true,
+  "modes": [
+    "full",
+    "after-only",
+    "swap-test",
+    "text-only"
+  ],
+  "reports": {
+    "full": {
+      "num_samples": 2,
+      "action_accuracy": 0.0,
+      "macro_f1": 0.0,
+      "format_compliance_rate": 1.0,
+      "json_valid_rate": 1.0,
+      "recovery_rate_at_k": 0.0,
+      "semi_loop_task_completion_rate": 0.0,
+      "last_action_executable_rate": 1.0,
+      "avg_steps_to_recover": null,
+      "failure_breakdown": {
+        "F1": {
+          "count": 1,
+          "action_acc": 0.0
+        },
+        "F5": {
+          "count": 1,
+          "action_acc": 0.0
+        }
+      },
+      "label_counts": {
+        "F1": 1,
+        "F5": 1
+      }
+    },
+    "after-only": {
+      "num_samples": 2,
+      "action_accuracy": 0.0,
+      "macro_f1": 0.0,
+      "format_compliance_rate": 0.5,
+      "json_valid_rate": 1.0,
+      "recovery_rate_at_k": 0.0,
+      "semi_loop_task_completion_rate": 0.0,
+      "last_action_executable_rate": 1.0,
+      "avg_steps_to_recover": null,
+      "failure_breakdown": {
+        "F1": {
+          "count": 1,
+          "action_acc": 0.0
+        },
+        "F5": {
+          "count": 1,
+          "action_acc": 0.0
+        }
+      },
+      "label_counts": {
+        "F1": 1,
+        "F5": 1
+      }
+    },
+    "swap-test": {
+      "num_samples": 2,
+      "action_accuracy": 0.0,
+      "macro_f1": 0.0,
+      "format_compliance_rate": 0.5,
+      "json_valid_rate": 1.0,
+      "recovery_rate_at_k": 0.0,
+      "semi_loop_task_completion_rate": 0.0,
+      "last_action_executable_rate": 1.0,
+      "avg_steps_to_recover": null,
+      "failure_breakdown": {
+        "F1": {
+          "count": 1,
+          "action_acc": 0.0
+        },
+        "F5": {
+          "count": 1,
+          "action_acc": 0.0
+        }
+      },
+      "label_counts": {
+        "F1": 1,
+        "F5": 1
+      }
+    },
+    "text-only": {
+      "num_samples": 2,
+      "action_accuracy": 0.5,
+      "macro_f1": 0.3333333333333333,
+      "format_compliance_rate": 0.5,
+      "json_valid_rate": 1.0,
+      "recovery_rate_at_k": 0.0,
+      "semi_loop_task_completion_rate": 0.0,
+      "last_action_executable_rate": 1.0,
+      "avg_steps_to_recover": null,
+      "failure_breakdown": {
+        "F1": {
+          "count": 1,
+          "action_acc": 1.0
+        },
+        "F5": {
+          "count": 1,
+          "action_acc": 0.0
+        }
+      },
+      "label_counts": {
+        "F1": 1,
+        "F5": 1
+      }
+    }
+  },
+  "token_stats": {
+    "full": {
+      "prompt_tokens_total": 34518,
+      "completion_tokens_total": 51,
+      "num_with_usage": 2
+    },
+    "after-only": {
+      "prompt_tokens_total": 17518,
+      "completion_tokens_total": 60,
+      "num_with_usage": 2
+    },
+    "swap-test": {
+      "prompt_tokens_total": 34526,
+      "completion_tokens_total": 58,
+      "num_with_usage": 2
+    },
+    "text-only": {
+      "prompt_tokens_total": 512,
+      "completion_tokens_total": 53,
+      "num_with_usage": 2
+    }
+  },
+  "pricing_usd_per_1m_tokens": {
+    "input": 0.15,
+    "output": 0.6
+  },
+  "cost_projection": {
+    "samples_per_mode": 300,
+    "per_mode": {
+      "full": {
+        "avg_prompt_tokens_per_sample": 17259.0,
+        "avg_completion_tokens_per_sample": 25.5,
+        "projected_cost_usd_for_samples": 300,
+        "projected_mode_cost_usd": 0.781245
+      },
+      "after-only": {
+        "avg_prompt_tokens_per_sample": 8759.0,
+        "avg_completion_tokens_per_sample": 30.0,
+        "projected_cost_usd_for_samples": 300,
+        "projected_mode_cost_usd": 0.399555
+      },
+      "swap-test": {
+        "avg_prompt_tokens_per_sample": 17263.0,
+        "avg_completion_tokens_per_sample": 29.0,
+        "projected_cost_usd_for_samples": 300,
+        "projected_mode_cost_usd": 0.782055
+      },
+      "text-only": {
+        "avg_prompt_tokens_per_sample": 256.0,
+        "avg_completion_tokens_per_sample": 26.5,
+        "projected_cost_usd_for_samples": 300,
+        "projected_mode_cost_usd": 0.01629
+      }
+    },
+    "projected_total_cost_usd_all_modes": 1.979145
+  }
+}

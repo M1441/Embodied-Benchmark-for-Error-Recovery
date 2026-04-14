@@ -1,0 +1,234 @@
+{
+  "Oracle": {
+    "num_samples": 300,
+    "action_accuracy": 1.0,
+    "macro_f1": 1.0,
+    "format_compliance_rate": 1.0,
+    "format_compliance_rate_raw": 1.0,
+    "format_compliance_rate_repaired": 1.0,
+    "json_valid_rate": 1.0,
+    "recovery_rate_at_k": 0.6,
+    "semi_loop_task_completion_rate": 0.6,
+    "last_action_executable_rate": 1.0,
+    "repair_applied_count": 0,
+    "avg_steps_to_recover": 1.0,
+    "failure_breakdown": {
+      "F1": {
+        "count": 60,
+        "action_acc": 1.0
+      },
+      "F2": {
+        "count": 60,
+        "action_acc": 1.0
+      },
+      "F3": {
+        "count": 60,
+        "action_acc": 1.0
+      },
+      "F4": {
+        "count": 60,
+        "action_acc": 1.0
+      },
+      "F5": {
+        "count": 60,
+        "action_acc": 1.0
+      }
+    },
+    "label_counts": {
+      "F1": 60,
+      "F2": 60,
+      "F3": 60,
+      "F4": 60,
+      "F5": 60
+    },
+    "ci95": {
+      "action_accuracy": {
+        "mean": 1.0,
+        "low": 1.0,
+        "high": 1.0,
+        "n_boot": 1000
+      },
+      "macro_f1": {
+        "mean": 1.0,
+        "low": 1.0,
+        "high": 1.0,
+        "n_boot": 1000
+      }
+    },
+    "method": "Oracle"
+  },
+  "LookAround": {
+    "num_samples": 300,
+    "action_accuracy": 0.2,
+    "macro_f1": 0.008333333333333335,
+    "format_compliance_rate": 1.0,
+    "format_compliance_rate_raw": 1.0,
+    "format_compliance_rate_repaired": 1.0,
+    "json_valid_rate": 1.0,
+    "recovery_rate_at_k": 0.0,
+    "semi_loop_task_completion_rate": 0.0,
+    "last_action_executable_rate": 1.0,
+    "repair_applied_count": 0,
+    "avg_steps_to_recover": null,
+    "failure_breakdown": {
+      "F1": {
+        "count": 60,
+        "action_acc": 1.0
+      },
+      "F2": {
+        "count": 60,
+        "action_acc": 0.0
+      },
+      "F3": {
+        "count": 60,
+        "action_acc": 0.0
+      },
+      "F4": {
+        "count": 60,
+        "action_acc": 0.0
+      },
+      "F5": {
+        "count": 60,
+        "action_acc": 0.0
+      }
+    },
+    "label_counts": {
+      "F1": 60,
+      "F2": 60,
+      "F3": 60,
+      "F4": 60,
+      "F5": 60
+    },
+    "ci95": {
+      "action_accuracy": {
+        "mean": 0.2,
+        "low": 0.15666666666666668,
+        "high": 0.24666666666666667,
+        "n_boot": 1000
+      },
+      "macro_f1": {
+        "mean": 0.008333333333333335,
+        "low": 0.00745573159366263,
+        "high": 0.011599474821711551,
+        "n_boot": 1000
+      }
+    },
+    "method": "LookAround"
+  },
+  "Heuristic-Oracle": {
+    "num_samples": 300,
+    "action_accuracy": 0.33666666666666667,
+    "macro_f1": 0.027512190049348195,
+    "format_compliance_rate": 1.0,
+    "format_compliance_rate_raw": 1.0,
+    "format_compliance_rate_repaired": 1.0,
+    "json_valid_rate": 1.0,
+    "recovery_rate_at_k": 0.02,
+    "semi_loop_task_completion_rate": 0.02,
+    "last_action_executable_rate": 0.7066666666666667,
+    "repair_applied_count": 0,
+    "avg_steps_to_recover": 1.0,
+    "failure_breakdown": {
+      "F1": {
+        "count": 60,
+        "action_acc": 1.0
+      },
+      "F2": {
+        "count": 60,
+        "action_acc": 0.08333333333333333
+      },
+      "F3": {
+        "count": 60,
+        "action_acc": 0.016666666666666666
+      },
+      "F4": {
+        "count": 60,
+        "action_acc": 0.5833333333333334
+      },
+      "F5": {
+        "count": 60,
+        "action_acc": 0.0
+      }
+    },
+    "label_counts": {
+      "F1": 60,
+      "F2": 60,
+      "F3": 60,
+      "F4": 60,
+      "F5": 60
+    },
+    "ci95": {
+      "action_accuracy": {
+        "mean": 0.33666666666666667,
+        "low": 0.2833333333333333,
+        "high": 0.3933333333333333,
+        "n_boot": 1000
+      },
+      "macro_f1": {
+        "mean": 0.027512190049348195,
+        "low": 0.022784575285355865,
+        "high": 0.045408522799518604,
+        "n_boot": 1000
+      }
+    },
+    "method": "Heuristic-Oracle"
+  },
+  "Blind-Heuristic": {
+    "num_samples": 300,
+    "action_accuracy": 0.37333333333333335,
+    "macro_f1": 0.04158396343218864,
+    "format_compliance_rate": 1.0,
+    "format_compliance_rate_raw": 1.0,
+    "format_compliance_rate_repaired": 1.0,
+    "json_valid_rate": 1.0,
+    "recovery_rate_at_k": 0.0,
+    "semi_loop_task_completion_rate": 0.0,
+    "last_action_executable_rate": 1.0,
+    "repair_applied_count": 0,
+    "avg_steps_to_recover": null,
+    "failure_breakdown": {
+      "F1": {
+        "count": 60,
+        "action_acc": 0.8666666666666667
+      },
+      "F2": {
+        "count": 60,
+        "action_acc": 0.0
+      },
+      "F3": {
+        "count": 60,
+        "action_acc": 0.0
+      },
+      "F4": {
+        "count": 60,
+        "action_acc": 1.0
+      },
+      "F5": {
+        "count": 60,
+        "action_acc": 0.0
+      }
+    },
+    "label_counts": {
+      "F1": 60,
+      "F2": 60,
+      "F3": 60,
+      "F4": 60,
+      "F5": 60
+    },
+    "ci95": {
+      "action_accuracy": {
+        "mean": 0.37333333333333335,
+        "low": 0.32,
+        "high": 0.43,
+        "n_boot": 1000
+      },
+      "macro_f1": {
+        "mean": 0.04158396343218864,
+        "low": 0.039963004195633124,
+        "high": 0.05447000788876167,
+        "n_boot": 1000
+      }
+    },
+    "method": "Blind-Heuristic"
+  }
+}
